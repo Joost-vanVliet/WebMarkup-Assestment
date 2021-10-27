@@ -1,8 +1,50 @@
 body { background-color: lightcoral}
 
+header,footer {
+  background-color: goldenrod;
+  flex-basis: 100%;
+}
+  
+.flexparent { 
+  background-color: wheat;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px;
+}
 
+
+
+nav{
+  flex-basis: 100%;
+  margin-bottom: 50px;
+  background-color: 006A45;
+}
+
+.Navlist{
+  list-style: none;
+}
+
+li{
+  float: left;
+  width: 25%;
+}
+
+#CleVideo{flex-basis: 100%;
+margin-bottom: 35px; }
+
+
+
+/* tablet version below */
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+/* mobile version below */
 @media only screen and (max-width: 600px) {
   body {
     background-color: lightblue;
   }
+  header{width: 400;}
 }
