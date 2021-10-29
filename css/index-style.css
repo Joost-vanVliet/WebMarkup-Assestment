@@ -1,43 +1,103 @@
-body { background-color: lightcoral}
-
-header,footer {
-  background-color: goldenrod;
-  flex-basis: 100%;
-}
-  
 .flexparent { 
   background-color: wheat;
   display: flex;
   flex-wrap: wrap;
-  margin: 25px;
 }
 
+header,footer {
+  flex-basis: 100%;
+  background-color: goldenrod;
+}
 
-
+/* nav settings */
 nav{
   flex-basis: 100%;
   margin-bottom: 50px;
-  background-color: 006A45;
+  background-color: lightcyan;
 }
 
-.Navlist{
+#navlist{
   list-style: none;
 }
 
-li{
+.navitem{
   float: left;
   width: 25%;
 }
 
 #CleVideo{flex-basis: 100%;
-margin-bottom: 35px; }
+  margin-bottom: 35px;
+  align-self: center;
+}
 
+/* article settings */
 
+.articles{
+  flex-basis: 70%;
+  flex-shrink: 1;
+  margin: 20px;
+}
+
+.artpic{
+  float: right;
+  margin: 25px;
+  margin-left: 80%;
+}
+
+.citytext p{
+  margin: 20px;
+  flex-basis: 80%;
+  margin-right: 20%;
+}
+
+aside{
+  background-color: mediumspringgreen;
+  width: 400px;
+  height: 500px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  position: fixed;
+  bottom:150px;
+  right: 25px;
+}
+
+footer{
+  height: 40px;
+  flex-basis: 50%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  order: 20;
+}
+
+#cookie{
+  background-color: #FFF;
+  opacity: 0.5;
+  position: fixed;
+  width: 25%;
+  height: 30px;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
 
 /* tablet version below */
 @media only screen and (min-width: 601px) and (max-width: 1200px) {
   body {
     background-color: lightgreen;
+  }
+  #CleVideo{ order: 2; }
+  .articles{order: 3;
+  flex-grow: 1;
+  }
+  aside{position:static;
+    order: 1;
+    height: auto;
+    flex-basis: 100%;
+    align-self: center;
+  }
+  .artpic{float: left;
+  margin-left: 0%;
+  margin-right: 70%;
   }
 }
 
@@ -46,5 +106,23 @@ margin-bottom: 35px; }
   body {
     background-color: lightblue;
   }
-  header{width: 400;}
+  /*mobile menu*/
+  #navlist{display: none;}
+  header{width: 400px;}
+  #CleVideo{ display: none;}
+  .articles{order: 2;
+  flex-grow: 1;
+  }
+  aside{position:static;
+    order: 1;
+    height: auto;
+    flex-basis: 100%;
+    align-self: center;
+  }
+  .artpic{
+    margin: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: none;
+  }
 }

@@ -1,0 +1,45 @@
+.flexparent { 
+    background-color: wheat;
+    display: flex;    
+    flex-wrap: wrap;
+}
+  
+header,footer {
+    flex-basis: 100%;
+    background-color: goldenrod;
+  }
+  
+  /* nav settings */
+nav{
+    flex-basis: 100%;
+    margin-bottom: 50px;
+    background-color: lightcyan;
+}
+  
+#navlist{
+    list-style: none;
+}
+  
+.navitem{
+    float: left;
+    width: 25%;
+}
+
+footer{
+    height: 40px;
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    order: 20;
+}
+  
+#cookie{
+    background-color: #FFF;
+    opacity: 0.5;
+    position: fixed;
+    width: 25%;
+    height: 30px;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+}
