@@ -1,0 +1,98 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#grid-container{
+    border-style: groove;
+    border-color: #FF0BFF;
+    grid-gap: 10px;
+    display: grid;
+}
+
+header,footer {
+    background-color: #ADFF2F;
+}
+header{
+    grid-area: headTag;
+}
+
+  /* nav settings */
+nav{
+    grid-area: navTag;
+    margin-bottom: 50px;
+    background-color: lightcyan;
+    align-self: center;
+}
+#navlist{
+    list-style: none;
+}
+  
+.navitem{
+    float: left;
+    width: 200px;
+    margin-left: 50px;
+}
+
+#contactinfo{
+    grid-area: infoTag;
+}
+
+form{
+    grid-area: formTag;
+    width: 1200px;
+}
+
+input{
+    width: 1000px;
+}
+
+#fmessage{
+    size: 300px;
+
+}
+
+aside{
+    grid-area: asideTag;
+    border-color: #F050E0;
+    border-style: solid;
+}
+aside figure{
+    width: 300px;
+}
+
+footer{
+    height: 40px;
+    grid-area: footerTag;
+}
+
+#cookie{
+    background-color: #FFF;
+    opacity: 0.5;
+    position: fixed;
+    height: 30px;
+    width: 500px;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1201px) {
+    #grid-container{ background-color: #FF0;
+        grid-template-areas: 
+    'headTag headTag headTag'
+    'headTag headTag headTag'
+    'headTag headTag headTag'
+    'navTag navTag navTag'
+    'infoTag infoTag asideTag'
+    'formTag formTag asideTag'
+    'formTag formTag asideTag'
+    'formTag formTag asideTag'
+    'formTag formTag asideTag'
+    'formTag formTag asideTag'
+    'footerTag footerTag footerTag'
+    'footerTag footerTag footerTag'
+    }
+    aside{
+        width: 400px;
+    }
+}

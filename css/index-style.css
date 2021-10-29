@@ -1,3 +1,6 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
 .flexparent { 
   background-color: wheat;
   display: flex;
@@ -5,13 +8,13 @@
 }
 
 header,footer {
-  flex-basis: 100%;
+  flex-basis: 1600px;
   background-color: goldenrod;
 }
 
 /* nav settings */
 nav{
-  flex-basis: 100%;
+  flex-basis: 1600px;
   margin-bottom: 50px;
   background-color: lightcyan;
 }
@@ -22,18 +25,17 @@ nav{
 
 .navitem{
   float: left;
-  width: 25%;
+  width: 250px;
 }
-
-#CleVideo{flex-basis: 100%;
-  margin-bottom: 35px;
-  align-self: center;
-}
-
 /* article settings */
 
+#CleVideo{
+  width: 1200px;
+  align-content: center;
+}
+
 .articles{
-  flex-basis: 70%;
+  flex-basis: 800px;
   flex-shrink: 1;
   margin: 20px;
 }
@@ -41,13 +43,12 @@ nav{
 .artpic{
   float: right;
   margin: 25px;
-  margin-left: 80%;
+  margin-left: 700px;
 }
 
 .citytext p{
   margin: 20px;
-  flex-basis: 80%;
-  margin-right: 20%;
+  flex-basis: 700px;
 }
 
 aside{
@@ -56,9 +57,6 @@ aside{
   height: 500px;
   flex-shrink: 0;
   flex-grow: 0;
-  position: fixed;
-  bottom:150px;
-  right: 25px;
 }
 
 footer{
@@ -73,11 +71,19 @@ footer{
   background-color: #FFF;
   opacity: 0.5;
   position: fixed;
-  width: 25%;
+  width: 200px;
   height: 30px;
   bottom: 0;
   right: 0;
   text-align: center;
+}
+@media only screen and (min-width: 1201px) {
+  aside{
+  position: fixed;
+  bottom:150px;
+  right: 25px;
+  }
+  
 }
 
 /* tablet version below */
@@ -85,6 +91,7 @@ footer{
   body {
     background-color: lightgreen;
   }
+  .flexparent{background-color: #A0FFA0;}
   #CleVideo{ order: 2; }
   .articles{order: 3;
   flex-grow: 1;
@@ -107,8 +114,23 @@ footer{
     background-color: lightblue;
   }
   /*mobile menu*/
-  #navlist{display: none;}
+  #navlist{text-align: center;
+  padding: 0.25px;
+  margin-bottom: 1px;
+  background: #B00B69;
+  border-bottom: 2px solid #3b0925;
+  }
+  #navlist li{
+    display: inline;
+  }
+  #navlist a{
+    display: inline-block;
+    padding: 0.25px 1px;
+  }
+
+  /*other things*/
   header{width: 400px;}
+  .flexparent{background-color: #00F0FF;}
   #CleVideo{ display: none;}
   .articles{order: 2;
   flex-grow: 1;

@@ -2,7 +2,7 @@
 <html lang = "eng">
 <head>
     <title>
-        Tui Homepage
+        besttrips.nl
     </title>
     <meta name = "author" content="Joost van Vliet"/>
     <link
@@ -26,6 +26,8 @@
             </h2>
         </header>
         <nav>
+            <input type="checkbox" id="MenuShowHide">
+            <label for="MenuShowHide"></label>
             <ul id="navlist">
                 <li class="navitem">
                     <a href="index.html">
@@ -49,27 +51,30 @@
                 </li>
             </ul>
         </nav>
-        <video id="CleVideo" width="480" height="360px" autoplay muted>
-            <source src = "img/ClevelandTourismVideo.mp4" type = "video/mp4">
-            <source src = "img.ClevelandTourismVideo.ogg" type = "video/ogg">
-            A video about the greatest travel destination Cleveland.
-        </video>
+        <figure id="CleVideo">
+            <video width="480" height="360px" muted autoplay loop>
+                <source src = "img/ClevelandTourismVideo.mp4" type = "video/mp4">
+                <source src = "img.ClevelandTourismVideo.ogg" type = "video/ogg">
+            </video>
+        </figure>
         <section class="articles">
             <article class="citytext">
                 <p>
                     <h2> Cleveland </h2>
                  </p>
                 <p> 
-                    Cleveland is a hot and current vacation destination, featuring two buildings, busses and homeless people. People who visit Cleveland say they were unable to leave because someone stole their belongings. A great amount of people aspire to one day go to Cleveland in order to experience the feeling of going somewhere you want to leave immediately. Thanks to our current combo deal if you bring someone with you we will literally give you money to stay in Cleveland.
+                    Cleveland is a hot and current vacation destination, featuring two buildings, busses and homeless people. People who visit Cleveland say they were unable to leave because someone stole their belongings. A great amount of people aspire to one day go to Cleveland in order to experience the feeling of going somewhere you want to leave immediately.<strong> Thanks to our current combo deal if you bring someone with you we will literally give you money to stay in Cleveland.</strong>
                     <a href="https://www.tripadvisor.com/Vacation_Packages-g50207-Cleveland_Ohio-Vacations.html">
                         Discover more
                     </a>
                 </p>
                 <a href="https://www.tripadvisor.com/Vacation_Packages-g50207-Cleveland_Ohio-Vacations.html">
-                    <img class="artpic" src="img/Cleveland_Skyline.jpg" width="300px" alt="Clevland skyline">
-                        this work is in the public domain.
-                    </img>
-                 </a>
+                    <figure class="artpic">
+                        <img src="img/Cleveland_Skyline.jpg" width="300px" alt="Clevland skyline">
+                            <figcaption>this work is in the public domain.</figcaption>
+                        </img>
+                    </figure>
+                </a>
             </article>
             <article class="citytext">
                 <p>
@@ -81,15 +86,16 @@
                     </a>
                 </p>
                 <a href="https://www.tui.nl/p/stedentrip/verenigd-koninkrijk/londen/?gclid=Cj0KCQjw8eOLBhC1ARIsAOzx5cGLL3cLOaBncQfwaBsUf35VBA8LHMGc30ACib2xb4DSOZOXui-iL1EaAnwxEALw_wcB&gclsrc=aw.ds">
-                    <img class="artpic" src="img/London_skyline.jpg" width="300px" alt="London Skyline">  
-                        Permission is granted to copy, disteribute and/or modify this document under the terms of the GNU Free Documentation Licens
-                    </img>
+                    <figure class="artpic">
+                        <img src="img/London_skyline.jpg" width="300px" alt="London Skyline">  
+                            <figcaption>Permission is granted to copy, disteribute and/or modify this document under the terms of the GNU Free Documentation Licens</figcaption>
+                        </img>
+                    </figure>
                 </a>
-                 
             </article>
             <article class="citytext">
                 <p>
-                    <h1> Rome </h1>
+                    <h2> Rome </h2>
                 </p>
                 <p>
                     Rome is the Capital of Italy, a beautiful city with amazing old ruins, many large boulevards filled with drunk people and expensive clothing stores. Truly no city is as romantic as Rome, except maybe Paris. Rome truly is the place to be if you want to be in a city that is not only rich in culture but also rich in the amount of ice-cream vendors, Truly a city like no other.
@@ -98,9 +104,11 @@
                     </a>
                 </p>
                 <a href="https://www.tui.nl/reizen/italie/lazio/rome/">
-                    <img class="artpic" src="img/Rome_City.jpg" width="300px" alt="Rome wide vieuw">
-                        By Oliver-Bonjoch - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=4943243
-                    </img>
+                    <figure class="artpic">
+                        <img src="img/Rome_City.jpg" width="300px" alt="Rome wide vieuw">
+                            <figcaption>Oliver-Bonjoch - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=4943243</figcaption>
+                        </img>
+                    </figure>
                 </a>
             </article>
         </section>
