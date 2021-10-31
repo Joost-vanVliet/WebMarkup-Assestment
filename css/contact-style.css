@@ -37,6 +37,11 @@ nav{
     word-spacing: 5px;
 }
 
+label::selection, p::selection{
+    background-color: #B5F;
+    color: #FFF;
+}
+
 #navlist li{
     float: left;
     width: 200px;
@@ -55,7 +60,7 @@ nav{
 
 form{
     grid-area: formTag;
-    width: 1200px;
+    width: 1050px;
 }
 
 input{

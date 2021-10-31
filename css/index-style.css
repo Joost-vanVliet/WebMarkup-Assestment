@@ -31,6 +31,10 @@ nav{
   list-style: none;
 }
 
+#navlist li:hover{
+  background-color: #06C;
+}
+
 #navlist li{
   float: left;
   width: 200px;
@@ -50,6 +54,11 @@ nav{
   flex-basis: 1000px;
   flex-shrink: 1;
   margin: 20px;
+}
+
+.articles ::selection{
+  background-color: #B5F;
+  color: #FFF;
 }
 
 .artpic{

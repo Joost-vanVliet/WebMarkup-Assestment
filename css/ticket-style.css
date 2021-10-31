@@ -7,6 +7,7 @@ body{
     border-color: #FF0BFF;
     display: grid;
     grid-gap: 10px;
+    background-color: #40D0A0;
 }
 
 header,footer {
@@ -20,7 +21,6 @@ header{
 nav{
     grid-area: navTag;
     margin-bottom: 50px;
-    background-color: lightcyan;
 }
 #MenuShowHide{
     display: none;
@@ -53,16 +53,24 @@ nav{
     grid-area: tableTag;
     background-color: #50AF00;
 }
+
+p::selection{
+    background-color: #B5F;
+    color: #FFF;
+  }
+
 #ticketart{
     grid-area: articleTag;
 }
+
+#sourcetab{
+    grid-area: sourceTag;
+}
+
 aside{
     grid-area: asideTag;
     border-color: #F050E0;
     border-style: solid;
-}
-aside figure{
-    width: 300px;
 }
 
 #footsource{

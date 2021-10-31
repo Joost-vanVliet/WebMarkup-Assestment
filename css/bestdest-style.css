@@ -48,6 +48,11 @@ article{
     border-style: dotted;
 }
 
+p::selection{
+    background-color: #B5F;
+    color: #FFF;
+  }
+
 #article1{
     grid-area: art1Tag;
 }
