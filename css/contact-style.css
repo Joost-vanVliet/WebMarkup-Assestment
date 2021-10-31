@@ -67,10 +67,6 @@ input{
     width: 1000px;
 }
 
-#fmessage{
-    size: 300px;
-}
-
 aside{
     grid-area: asideTag;
     border-color: #F050E0;
