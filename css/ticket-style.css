@@ -3,7 +3,7 @@ body{
 }
 
 #grid-container{
-    border-style: groove;
+    border-style: double;
     border-color: #FF0BFF;
     display: grid;
     grid-gap: 10px;
@@ -22,10 +22,26 @@ nav{
     margin-bottom: 50px;
     background-color: lightcyan;
 }
+#MenuShowHide{
+    display: none;
+}
 #navlist{
     list-style: none;
 }
-  
+
+#navlist, p, td{
+    letter-spacing: 0.75px;
+    line-height: 20px;
+    text-indent: 10px;
+    word-spacing: 5px;
+}
+
+#navlist li{
+    float: left;
+    width: 200px;
+    margin-left: 50px;
+}
+
 .navitem{
     float: left;
     width: 200px;
@@ -54,20 +70,20 @@ aside figure{
 }
 
 footer{
-    height: 40px;
     grid-area: footerTag;
 }
   
 #cookie{
-    background-color: #FFF;
+    color: #FFF;
+    background-color: #FA0;
     opacity: 0.5;
     position: fixed;
+    width: 200px;
     height: 30px;
-    width: 500px;
     bottom: 0;
     right: 0;
     text-align: center;
-}
+  }
 
 @media only screen and (min-width: 1201px) {
     #grid-container{ background-color: #F75;
@@ -117,6 +133,74 @@ footer{
     }
 }
 @media only screen and (max-width: 600px) {
+    /*mobile menu*/
+    nav{
+        background: #DAA520;
+        margin-bottom: 0;
+        width: 200px;
+    }
+    #navlist{ display: none;
+        align-items: center;
+        padding: 0.25px;
+        margin-bottom: 1px;
+        margin-top: 0px;
+        background: #B00B69;
+        border-bottom: 2px double #3b0925;
+        width: 140px;
+        height: 80px;
+      }
+    #navlist li{
+        display: block;
+        float: left;
+        text-align: center;
+        margin-left: 0px;
+        width: 140px;
+    }
+    
+    #navlist a{
+        display: inline-block;
+        padding: 0.25px 1px;
+        text-decoration: none;
+        color: #FFF;
+    }
+    #navlist a:active,
+    #navlist a:focus,
+    #navlist a:hover{
+        background:#06C;  
+    }
+    
+    #menuShowHide + label {
+        position:relative;
+        float:right;
+        padding:3px;
+        border:2px solid #FFF;
+        background:#248;
+        color:#FFF;
+        border-radius:6px;
+    }
+    #menuShowHide + label:after,
+    #menuShowHide + label:before {
+        content:"";
+        display:block;
+        width:2em;
+        height:0.5em;
+        border:solid #FFF;
+        border-width:0.25em 0;
+        }
+    #menuShowHide + label:after {
+        border-top:0;
+    }
+    
+    #MenuShowHide:checked ~ #navlist{
+        display: block;
+    }
+    /*other things*/
+    header figure{
+        display: none;
+    }
+    header{
+        width: 320px;
+    }
     #grid-container{ background-color: #40D0A0;
         grid-template-areas:
         'headTag navTag'
